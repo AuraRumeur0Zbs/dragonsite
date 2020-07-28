@@ -1,0 +1,21 @@
+p.build{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1.welcome{
+    color: rgb(97, 17, 202);
+    font-size: 50px;
+    text-align: center;
+}
+
+body{
+    background: url(https://besthqwallpapers.com/img/original/36531/stone-texture-4k-gray-background-gray-stone.jpg) no-repeat;
+    background-size: 100%;
+}
+
+img.logo{
+    padding-left: 775px;
+}
