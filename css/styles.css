@@ -1,3 +1,28 @@
+
+/* Menu de navigation */
+
+nav.menu-nav ul li.btn{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+}
+nav.menu-nav ul li.btn a{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+nav.menu-nav ul li.btn:hover a{
+    color: red;
+    background-color: white;
+    transition: 0.4s all;
+}
+
+/* index.html : styles */
+
 p.build{
     color: rgb(0, 0, 0);
     font-size: 25px;
