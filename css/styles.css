@@ -1,11 +1,28 @@
+/* Haut de Page */
 
-/* Menu de navigation */
+header{
+    background: url(http://getwallpapers.com/wallpaper/full/9/b/1/6339.jpg);
+}
+
+div#header div{
+    display: inline-block;
+}
+
+div#header div.leftpart{
+    vertical-align: middle
+}
+
+div#header div.middlepart{
+    display: inline-block;
+}
+    /* Menu de navigation */
 
 nav.menu-nav ul li.btn{
     list-style-type: none;
     display: inline-block;
     padding: 5px;
 }
+
 nav.menu-nav ul li.btn a{
     color: white;
     background-color: red;
@@ -14,7 +31,10 @@ nav.menu-nav ul li.btn a{
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 10px;
+    border-style: ridge;
+    border-radius: 10px;
 }
+
 nav.menu-nav ul li.btn:hover a{
     color: red;
     background-color: white;
@@ -24,23 +44,68 @@ nav.menu-nav ul li.btn:hover a{
 /* index.html : styles */
 
 p.build{
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: 25px;
     text-align: center;
     font-weight: bold;
-}
-
-h1.welcome{
-    color: rgb(97, 17, 202);
-    font-size: 50px;
-    text-align: center;
+    text-decoration: underline;
 }
 
 body{
-    background: url(https://besthqwallpapers.com/img/original/36531/stone-texture-4k-gray-background-gray-stone.jpg) no-repeat;
+    /*background: url(https://besthqwallpapers.com/img/original/36531/stone-texture-4k-gray-background-gray-stone.jpg) no-repeat;*/
     background-size: 100%;
+    background: url(https://s3.amazonaws.com/liftclient-offloading/rebelpig/wp-content/uploads/2018/01/07001139/dark-wood-texture.jpg);
 }
 
 img.logo{
-    padding-left: 775px;
+    padding-left: 665px;
+    inline-size: 500px;
+}
+
+img.logo_small{
+    inline-size: 100px;
+}
+
+p.copyright{
+    font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+/* Contenue */
+
+div#content div{
+    display: inline-block;
+    width: 48%;
+}
+
+div#content div.leftbox{
+    vertical-align: top;
+}
+
+div#content div.rightbox{
+    background: url(https://www.xmple.com/wallpaper/linear-orange-gradient-highlight-red-1920x1080-c2-ff0000-ff8c00-l-50-a-30-f-21.svg);
+}
+
+div#content div h1, p, iframe{
+    margin: 25px;
+}
+
+h1.buildprogress{
+    text-align: center;
+    color: white;
+}
+
+a.buildprogress{
+    color: red  ;
+    font-size: 25px;
+    text-decoration: none;
+    padding-left: 680px;
+}
+
+h1.csgo{
+    color: white;
 }
