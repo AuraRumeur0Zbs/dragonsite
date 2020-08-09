@@ -1,7 +1,10 @@
 /* Haut de Page */
 
 header{
-    background: url(http://getwallpapers.com/wallpaper/full/9/b/1/6339.jpg);
+    size: 100%;
+    /*background: url(https://img.freepik.com/free-vector/abstract-metallic-background_43969-861.jpg?size=626&ext=jpg);*/
+    background-color: #131314;
+    
 }
 
 div#header div{
@@ -9,11 +12,19 @@ div#header div{
 }
 
 div#header div.leftpart{
-    vertical-align: middle
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+div#header div.lefttext{
+    font-family: haboro-soft, sans-serif;
+    font-style: normal;
+    font-weight: 200;
 }
 
 div#header div.middlepart{
     display: inline-block;
+    padding-left: 1300px;
 }
     /* Menu de navigation */
 
@@ -25,19 +36,20 @@ nav.menu-nav ul li.btn{
 
 nav.menu-nav ul li.btn a{
     color: white;
-    background-color: red;
+    background-color: transparent;
     text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-style: solid;
+    border-width: 1px;
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 10px;
-    border-style: ridge;
-    border-radius: 10px;
 }
 
 nav.menu-nav ul li.btn:hover a{
-    color: red;
-    background-color: white;
+    /*color: red;*/
+    background-color: #212122;
     transition: 0.4s all;
 }
 
@@ -54,7 +66,8 @@ p.build{
 body{
     /*background: url(https://besthqwallpapers.com/img/original/36531/stone-texture-4k-gray-background-gray-stone.jpg) no-repeat;*/
     background-size: 100%;
-    background: url(https://s3.amazonaws.com/liftclient-offloading/rebelpig/wp-content/uploads/2018/01/07001139/dark-wood-texture.jpg);
+    /*background: url(https://s3.amazonaws.com/liftclient-offloading/rebelpig/wp-content/uploads/2018/01/07001139/dark-wood-texture.jpg);*/
+    background: url(http://getwallpapers.com/wallpaper/full/b/1/1/540571.jpg    )
 }
 
 img.logo{
@@ -63,19 +76,22 @@ img.logo{
 }
 
 img.logo_small{
-    inline-size: 100px;
+    inline-size: 90px;
 }
 
 p.copyright{
     font-weight: bold;
-}
-
-footer{
-    background-color: black;
-    color: white;
+    padding-top: 20px;
+    text-align: center;
 }
 
 /* Contenue */
+
+div#content{
+    background-color: grey;
+    background: url(http://epicwallpaperz.com/wallpaper-hd/black-abstract-wallpaper-hd-On-wallpaper-hd.jpg) no-repeat;
+    background-size: 100%;
+}
 
 div#content div{
     display: inline-block;
@@ -108,4 +124,19 @@ a.buildprogress{
 
 h1.csgo{
     color: white;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+/* Bas de Page */
+
+footer{
+    background-color: black;
+    color: white;
+    height: 60px;
+    bottom: 0px;
+    left: 0px;
 }
