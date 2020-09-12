@@ -1,0 +1,133 @@
+.header {
+    height: 400px;
+    width: 100%;
+    background: rgb(37, 36, 36);
+    position: relative;
+}
+.header_otherpage {
+    height: 350px;
+}
+.header_otherpage .header_slogan {
+    margin-top: 10px;
+}
+.header_texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    background: url('../img/GamingPC.jpg') center no-repeat;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.header_mask{
+    position: absolute;
+    bottom: 0;
+    background: 0 0;
+    height: 42px;
+    width: 100%;
+    z-index: 10;
+}
+.header_navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_navbar-logo-title {
+    color: white;
+    font-size: 28px;
+}
+
+.header_navbar-menu-link {
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.header_slogan {
+    text-align: center;
+    margin-top: 40px    ;
+}
+
+.h_slogan-title {
+    color: white;
+    font-size: 40px;    
+    font-style: italic;
+    font-family: Kufam;
+}
+
+.header_navbar-toggle {
+    width: 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+
+.header_navbar-toggle-icons, .header_navbar-toggle-icons::before, .header_navbar-toggle-icons::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.header_navbar-toggle-icons::before {top: 10px}
+.header_navbar-toggle-icons::after {top: -14px}
+
+.is-open .header_navbar-menu {
+    transform: translateY(0);
+}
+
+.header_navbar-toggle.is-open span.header_navbar-toggle-icons{
+    background: transparent;
+}
+
+.header_navbar-toggle.is-open span.header_navbar-toggle-icons::before, .header_navbar-toggle.is-open span.header_navbar-toggle-icons:after{
+    transform-origin: center;
+    transform: rotate(45deg);
+    top: 0px;
+}
+
+.header_navbar-toggle.is-open span.header_navbar-toggle-icons:before {
+    transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 600px){
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+    .header_navbar-toggle {
+        display: flex;
+        z-index: 1000;
+    }
+    .header_navbar-menu {
+        transition: all 0.3s ease-in-out;
+        transform: translateY(-100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: #2c3e50;
+        top: 0;left: 0;
+    }
+    .header_navbar-menu-link {
+        margin: 20px 0;
+        font-size: 24px;
+    }
+    .h_slogan-title {
+        font-size: 40px;
+    }
+}

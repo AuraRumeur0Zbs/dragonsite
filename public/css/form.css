@@ -1,0 +1,53 @@
+.form {
+    width: 100%;
+}
+.form-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.form_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form_line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.form_block {
+    width: 200px;
+    margin: 0 15px;
+}
+
+.form_label {
+    font-weight: 400;
+    margin-bottom: 10;
+}
+
+.form_input {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #1080f0;
+    outline: 0;
+    transition: all 0.3s ease-in-out;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: 'Nunito';
+    margin-bottom: 10px;
+}
+.form_input:focus {
+    border-color: grey;
+}
+
+.form .btn {
+    margin-top: 20px;
+    cursor: pointer;
+}

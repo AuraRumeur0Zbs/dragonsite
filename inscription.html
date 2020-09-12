@@ -3,18 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home | DragonSpirit</title>
+        <title>Inscription | DragonSpirit</title>
         <script src="https://kit.fontawesome.com/96ce2d201a.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@1,600&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="public/css/base.css">
         <link rel="stylesheet" href="public/css/header.css">
-        <link rel="stylesheet" href="public/css/articles.css">
+        <link rel="stylesheet" href="public/css/form.css">
     </head>
     <body>
 
-    <div class="header">
+    <div class="header header_otherpage">
         <div class="header_texture"></div>
         <div class="header_mask">
             <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -27,11 +27,11 @@
                     <h1 class="header_navbar-logo-title">DragonSpirit ©</h1>
                 </div>
                 <div class="header_navbar-menu">
-                    <a href="#" class="header_navbar-menu-link"><i class="fas fa-home"></i> Acceuil</a>
+                    <a href="" class="header_navbar-menu-link"><i class="fas fa-home"></i> Acceuil</a>
                     <a href="" class="header_navbar-menu-link"><i class="fas fa-newspaper"></i> Article</a>
                     <a href="" class="header_navbar-menu-link"><i class="fas fa-phone"></i> Contact</a>
-                    <a href="../DragonSite/connexion.html" class="header_navbar-menu-link"><i class="fas fa-sign-in-alt"></i> Connexion</a>
-                    <a href="../DragonSite/inscription.html" class="header_navbar-menu-link"><i class="fas fa-user-plus"></i> Inscription</a>
+                    <a href="" class="header_navbar-menu-link"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+                    <a href="" class="header_navbar-menu-link"><i class="fas fa-user-plus"></i> Inscription</a>
                 </div>
                 <div class="header_navbar-toggle">
                     <span class="header_navbar-toggle-icons"></span>
@@ -44,29 +44,34 @@
         </div>
     </div>
 
-    <div class="articles">
-        <div class="container">
-                <h2 class="articles_title">Les News</h2>
-                <div class="articles_items">
-                    <a href="article1.html" class="article" style="background: url(public/img/article1.png);background-size: cover;">
-                        <div class="article_filter"></div>
-                        <div class="article_name">McCube ouvre ses Portes</div>
-                        <div class="article_icon"><i class="fas fa-play"></i></div>
-                    </a>
-                    <div class="article" style="background: url(public/img/Gaming\ Controler.jpg);background-size: cover;">
-                        <div class="article_filter"></div>
-                        <div class="article_name">Placeholder</div>
-                        <div class="article_icon"><i class="fas fa-play"></i></div>
-                    </div>
-                    <div class="article" style="background: url(public/img/article2.jpg);background-size: cover;">
-                        <div class="article_filter"></div>
-                        <div class="article_name">weshden</div>
-                        <div class="article_icon"><i class="fas fa-play"></i></div>
-                    </div>
-                </div>
+   <div class="container">
+        <div class="form">
+            <div class="form-title">Inscription</div>
+            <form class="form_inner" action="">
+                 <div class="form_line">
+                    <div class="form_block">
+                        <h4 class="form_label">Nom</h4>
+                        <input class="form_input" type="text" placeholder="Test">
+                    </div> 
+                    <div class="form_block">
+                        <h4 class="form_label">Email</h4>
+                        <input class="form_input" type="text" placeholder="test@gmail.com"> 
+                    </div>  
+                 </div>
+                 <div class="form_line">
+                    <div class="form_block">
+                        <h4 class="form_label">Mot de passe</h4>
+                        <input class="form_input" type="text" placeholder="123456">
+                    </div> 
+                    <div class="form_block">
+                        <h4 class="form_label">Confirmation mot de passe</h4>
+                        <input class="form_input" type="text" placeholder="123456">
+                    </div>  
+                 </div> 
+                 <button class="btn">S'inscrire</button>   
+            </form>
         </div>
-    </div>
-
+   </div>
 
     <script
         src="https://code.jquery.com/jquery-3.5.1.min.js"
